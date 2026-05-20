@@ -49,3 +49,19 @@ bicholandia/
 │   ├── login.css            # Layout da tela de login
 │   └── cadastro.css         # Layout da tela de cadastro
 └── images/                  # Assets, ícones e fotos dos pets
+
+
+---
+
+## 👥 Contribuidores
+
+Desenvolvido por:
+
+*   **Carlos Eduardo** – [Portfólio/Currículo](https://carloss0101.github.io/Curriculo/)
+*   **Felipe Dummer** – [Website](https://feliperdummer.com.br/)
+*   **Helder** – [GitHub](https://helder639.github.io)
+
+---
+<p align="center">
+  Desenvolvido com ❤️ para a causa animal.
+</p>

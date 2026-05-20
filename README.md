@@ -49,9 +49,7 @@ bicholandia/
 │   ├── login.css            # Layout da tela de login
 │   └── cadastro.css         # Layout da tela de cadastro
 └── images/                  # Assets, ícones e fotos dos pets
-
-
----
+```
 
 ## 👥 Contribuidores
 

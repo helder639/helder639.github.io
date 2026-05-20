@@ -1,75 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&family=Cinzel:wght@400..900&family=Libre+Barcode+EAN13+Text&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+EAN13+Text&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <title>Currículo - Helder de Lima Dantas Neto</title>
 </head>
 
 <body>
-    <header>
-        <h1><span>Helder de Lima Danta</span>s Neto</h1>
-    </header>
-    <figure id="foto1">
-        <img src="figs/Perfil.jpeg" id="Perfil" alt="Foto de perfil">
-    </figure>
-    <nav>
-        <ul id="Contato">
-            <li><i class="material-icons-outlined" style="font-size: 18px; " >alternate_email</i> <a href="mailto:neto0309@hotmail.com"> Email</a></li>
-            <li><i class="fa fa-linkedin"></i><a href="https://www.linkedin.com/in/helder-neto-qaengineer/" target="_blank"> Linkedin</a></li>
-            <li><i class="fa fa-map-marker"></i> <a href="https://www.google.com/maps/place/Cornélio+Procópio,+PR/@-23.1825676,-50.6521999,14z/data=!4m6!3m5!1s0x94eadf17b06e81af:0xc38f2f9ebf143f8a!8m2!3d-23.1853407!4d-50.648509!16s%2Fg%2F11bxfxhz1r?entry=ttu&g_ep=EgoyMDI2MDMyMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" title="Localização"> Cornélio Procópio, Paraná</a></li>
-        </ul>
-    </nav>
-    
-    <section class="container">
-        <div class="coluna-esquerda">
-            <h2>Resumo</h2>
-            <p class="texto">Estudante de Engenharia de Software na Universidade Tecnológica Federal do Paraná (UTFPR), apaixonado por automação de testes e Quality Assurance (QA). 
-                Com experiência prática em ferramentas como Cypress, Postman, Appium e Selenium, além de programação em Node.js, Python e Java. 
-                Proativo na busca por novas soluções, busco aplicar minhas habilidades para elevar a qualidade e eficiência no desenvolvimento de software.</p>
-            
-            <h2>ODS que prentendo contribuir</h2>
-            <figure>
-                <img src="figs/SDG-14.svg" id="ODS14" alt="ODS 14 - Vida na Água" width="300" height="200">
-            </figure>
-        </div>
-        <div class="coluna-direita">
-            <h2>Habilidades</h2>
-            <ul class="texto" id="lista">
-                <li>Automação de API com Postman</li>
-                <li>Automação de Teste com Cypress.io</li>
-                <li>Automação Mobile de JavaScript</li>
-                <li>Banco de Dados</li>
-                <li>Software Testing, Processo Scrum e Requisitos</li>
-                <li>Automação de Teste com Appium</li>
-                <li>Java e JavaScript</li>
-            </ul>
-            <h2>Educação</h2>
-            <dl class="texto">
-                <dt>Bacharelado em Engenharia de Software</dt>
-                <dd><a href="https://www.utfpr.edu.br/campus/cornelioprocopio" target="_blank">UTFPR-CP</a></dd>
-                <dd>2024 - 2027</dd>
-                <dt>Curso Guardiões da Qualidade</dt>
-                <dd>Lume Stack</dd>
-                <dd>2024 - 2025</dd>
-            </dl>
-        </div>
-        </section>
-        <br><br>
-        <h2 class="final">Links Adicionais</h2>
-        <ul class="final">
-            <li><i class="fa fa-github"></i> <a href="https://github.com/helder639" target="_blank">GitHub</a></li>
-        </ul>
-    
-    <footer class="final">
-        <p>Helder de Lima Dantas Neto - 2026</p>
-    </footer>
+    <div class="resume-wrapper">
+        <header class="header-container">
+            <div class="header-foto">
+                <img src="figs/Perfil.jpeg" id="Perfil" alt="Foto de perfil Helder">
+            </div>
+            <div class="header-dados">
+                <h1>Helder de Lima Dantas Neto</h1>
+                <p class="subtitulo">Estudante de Engenharia de Software & QA Engineer</p>
+                <nav>
+                    <ul id="Contato">
+                        <li><i class="material-icons-outlined">alternate_email</i> <a href="mailto:neto0309@hotmail.com">Email</a></li>
+                        <li><i class="fa fa-linkedin"></i> <a href="https://www.linkedin.com/in/helder-neto-qaengineer/" target="_blank">LinkedIn</a></li>
+                        <li><i class="fa fa-github"></i> <a href="https://github.com/helder639" target="_blank">GitHub</a></li>
+                        <li><i class="fa fa-map-marker"></i> <a href="http://maps.google.com/?q=Cornélio+Procópio,+Paraná" target="_blank">Cornélio Procópio, PR</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container">
+            <section class="coluna-esquerda">
+                <div class="secao">
+                    <h2>Resumo Profissional</h2>
+                    <p class="texto">Estudante de Engenharia de Software na Universidade Tecnológica Federal do Paraná (UTFPR), apaixonado por automação de testes e Quality Assurance (QA). Com experiência prática em ferramentas como Cypress, Postman, Appium e Selenium, além de programação em Node.js, Python e Java. Proativo na busca por novas soluções, busco aplicar minhas habilidades para elevar a qualidade e eficiência no desenvolvimento de software.</p>
+                </div>
+
+                <div class="secao">
+                    <h2>Compromisso ODS</h2>
+                    <p class="texto-sub">Pretendo contribuir ativamente com as metas globais:</p>
+                    <figure id="container-ods">
+                        <img src="figs/SDG-14.svg" id="ODS14" alt="ODS 14 - Vida na Água" width="140" height="115">
+                        <figcaption>ODS 14 - Proteção e uso sustentável dos oceanos e recursos marinhos.</figcaption>
+                    </figure>
+                </div>
+
+                <div class="secao">
+                    <h2>Hobbies</h2>
+                    <div class="hobbies-container">
+                        <span class="hobby-item"><i class="fa fa-music"></i> Tocar baixo</span>
+                        <span class="hobby-item"><i class="fa fa-headphones"></i> Escutar música</span>
+                        <span class="hobby-item"><i class="fa fa-book"></i> Ler livros</span>
+                        <span class="hobby-item"><i class="fa fa-cutlery"></i> Cozinhar</span>
+                        <span class="hobby-item"><i class="fa fa-magic"></i> Sorcery</span>
+                        <span class="hobby-item"><i class="fa fa-gamepad"></i> Jogos online</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="coluna-direita">
+                <div class="secao">
+                    <h2>Habilidades & Tecnologias</h2>
+                    <div class="skills-grid">
+                        <span class="skill-tag">Automação de API (Postman)</span>
+                        <span class="skill-tag">Cypress.io</span>
+                        <span class="skill-tag">Appium (Mobile Testing)</span>
+                        <span class="skill-tag">Selenium</span>
+                        <span class="skill-tag">JavaScript / Node.js</span>
+                        <span class="skill-tag">Java & Python</span>
+                        <span class="skill-tag">Banco de Dados</span>
+                        <span class="skill-tag">Metodologia Scrum</span>
+                        <span class="skill-tag">Engenharia de Requisitos</span>
+                    </div>
+                </div>
+
+                <div class="secao">
+                    <h2>Educação & Certificações</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <h3>Bacharelado em Engenharia de Software</h3>
+                            <p class="instituicao"><a href="https://www.utfpr.edu.br/campus/cornelioprocopio" target="_blank">UTFPR - Campus Cornélio Procópio</a></p>
+                            <span class="periodo">2024 - 2027</span>
+                        </div>
+                        <div class="timeline-item">
+                            <h3>Curso Guardiões da Qualidade</h3>
+                            <p class="instituicao">Lume Stack</p>
+                            <span class="periodo">2024 - 2025</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer-container">
+            <p>Helder de Lima Dantas Neto</p>
+        </footer>
+    </div>
 </body>
+
 </html>

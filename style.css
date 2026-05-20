@@ -1,122 +1,242 @@
-body{
+
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+
+body {
     background-color: #f0eaea;
+    font-family: 'Roboto', sans-serif;
+    color: #334155;
+    line-height: 1.6;
+    padding: 40px 20px;
 }
-body i{
+
+#Contato i {
+    color: rgb(5, 5, 109) !important; 
+}
+
+.resume-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+a {
+    color: #2563eb;
+    transition: color 0.2s ease;
+}
+
+a:hover {
     color: rgb(5, 5, 109);
+    text-decoration: underline;
 }
-body a{
-    text-decoration: none;
-    color: rgb(2, 2, 68);
+
+h2 {
+    color: rgb(5, 5, 109);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #e2e8f0;
 }
-body a:hover{
-    color: rgb(4, 56, 197);
+
+.secao {
+    margin-bottom: 35px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-bottom: 30px;
+    border-bottom: 2px solid #f1f5f9;
+    margin-bottom: 30px;
+}
+
+#Perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 20%; 
+    object-fit: cover;
+    border: 3px solid #e2e8f0;
+}
+
+.header-dados h1 {
+    font-size: 28px;
+    color: rgb(5, 5, 109);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.header-dados .subtitulo {
+    font-size: 16px;
+    color: #64748b;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+#Contato {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style: none;
+}
+
+#Contato li {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #475569;
+}
+
+#Contato i {
+    font-size: 16px;
+    color: #64748b;
 }
 
 .container {
     display: flex;
-    gap: 65px;         
-    max-width: 1050px; 
-    margin: -30px 37px -70px auto;    
-    padding: 20px;
+    gap: 40px;
 }
 
 .coluna-esquerda {
-    flex: 1;          
-    position: relative;
-    padding-right: 40px
-}
-.coluna-esquerda::after {
-    content: "";
-    position: absolute;
-    right: 0;           
-    top: 5%;           
-    height: 85%;
-    width: 1px;        
-    background-color: rgb(5, 5, 109);
+    margin-right: 18px;
 }
 
-.coluna-direita {
-    flex: 2;           
+.coluna-right {
+    flex: 1;
 }
 
-a[href="https://www.utfpr.edu.br/campus/cornelioprocopio"]{
-    color: rgb(5, 5, 109);
-    font-style: italic;
-    text-decoration: underline overline;
+.texto {
+    font-size: 14.5px;
+    color: #475569;
+    text-align: justify;
 }
 
-h1{
-    text-align: center;
-    color: rgb(5, 5, 109);
-    font-family: "Cinzel", serif;
-    font-style: normal;
-}
-h1 span{
-    border-bottom: 2px solid rgb(5, 5, 109);
-    padding-bottom: 0px;
-    font-family: "Cinzel", serif;
-    font-style: normal;
-    
-    
+.texto-sub {
+    font-size: 13px;
+    color: #64748b;
+    margin-bottom: 10px;
 }
 
-#foto1{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-#Perfil {
-    width: 180px;
-    height: 145px;
-    border-radius: 10px;
-
-}
-#Contato{
+#container-ods {
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 20px;
-    list-style: none;
-}
-
-
-h2{
-    color: rgb(5, 5, 109);
-    font-family: "Cinzel", serif;
-    font-style: normal;
-    text-decoration: underline;
+    gap: 15px;
+    background-color: #f0eaea;
+    padding: 12px;
+    border-radius: 8px;
 }
 
 #ODS14 {
-    width: 160px;
-    height: 132px;
-    border-radius: 10px;
-    }
-
-
-.texto{
-    font-family:Arial, Helvetica, sans-serif
+    width: 70px;
+    height: auto;
+    border-radius: 4px;
 }
 
-#lista{
-    list-style-type: disc;
-    padding-left: 25px;
-    display: block;
-}
-#lista li{
-    display: list-item;
-    margin-bottom: 5px;
+.hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
 }
 
-.final{
-    text-align: center;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+.hobby-item {
+    background-color: #f8fafc;
+    color: #475569;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 400;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    gap: 6px;
 }
 
+.hobby-item i {
+    color: #64748b !important;
+    font-size: 14px;
+}
 
-footer{
-    font-family: "Libre Barcode EAN13 Text", system-ui;
+#container-ods figcaption {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.skill-tag {
+    background-color: #f0eaea;
+    color: #334155;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #e2e8f0;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.timeline-item h3 {
+    font-size: 15px;
+    color: #1e293b;
+    font-weight: 600;
+}
+
+.timeline-item .instituicao {
+    font-size: 14px;
+    color: #475569;
+}
+
+.timeline-item .periodo {
+    display: inline-block;
+    font-size: 12px;
+    background-color: #f0eaea;
+    color: #1d4ed8;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-top: 4px;
+    font-weight: 500;
+}
+
+.timeline-item .instituicao a {
     font-style: normal;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-container {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #f1f5f9;
+    text-align: center;
+}
+
+.footer-container p {
+    font-family: "Libre Barcode EAN13 Text", system-ui;
+    font-size: 32px;
+    color: #94a3b8;
+}
+
+.timeline-item .instituicao a {
+    text-decoration: underline overline !important;
+    font-style: italic;
 }
